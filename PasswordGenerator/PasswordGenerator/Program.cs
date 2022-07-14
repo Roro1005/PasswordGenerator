@@ -9,6 +9,7 @@ namespace Application
         {
 
             var rand = new System.Random();
+            int digits = Functions.ParseArgs(args);
 
             char[] bigLetters = new char[]
             {
@@ -25,6 +26,10 @@ namespace Application
             char[] numberLetters = new char[]
             {
                 '0','1','2','3','4','5','6','7','8','9'
+            };
+            char[] markLetters = new char[]
+            {
+                '-','_','!','+','*','#','$','%','&',
             };
 
             string result = "";
